@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de CPF</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h1>🔍 Validador de CPF</h1>
+                <p>Verifique se um número de CPF é válido</p>
+            </div>
+            
+            <div class="card-body">
+                <div class="input-group">
+                    <label for="cpfInput">Digite o CPF</label>
+                    <input 
+                        type="text" 
+                        id="cpfInput" 
+                        placeholder="000.000.000-00"
+                        maxlength="14"
+                        autocomplete="off"
+                    >
+                </div>
+                
+                <button id="validateBtn" class="btn-validate">
+                    Validar CPF
+                </button>
+                
+                <button id="clearBtn" class="btn-clear">
+                    Limpar
+                </button>
+            </div>
+            
+            <div id="result" class="result hidden">
+                <div class="result-icon"></div>
+                <div class="result-message"></div>
+                <div class="result-cpf"></div>
+            </div>
+        </div>
+        
+        <div class="info">
+            <small>Use máscara ou sem máscara: 000.000.000-00 ou 00000000000</small>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
